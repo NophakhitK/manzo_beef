@@ -390,7 +390,7 @@ h2 {
 @media (max-width: 700px) {
     .cta {
         margin: 0 0;
-        padding: 12spx 24px;
+        padding: 12px 24px;
         border-radius: 0;
     }
 }
