@@ -180,7 +180,7 @@ H1 {
     gap: 70px;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .hero-left {
@@ -217,6 +217,7 @@ H1 {
 .nav-right-links a {
     text-decoration: none;
     color: #e5e7eb;
+    transition: all 0.2s ease-out;
 }
 
 .nav-right-links a:hover {
@@ -271,9 +272,84 @@ h2 {
     padding: 10px 0;
 }
 
+
+.testimonial {
+    display: flex;
+    background-color: #E5E7EB;
+    padding: 120px 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonial blockquote {
+    font-size: 30px;
+    font-weight: light;
+    font-style: italic;
+    line-height: 40px;
+}
+
+.testimonial figcaption {
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cta {
+    display: flex;
+    width: 800px;
+    padding: 48px 72px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    margin: 30px auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-now {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cta h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E5E7EB;
+}
+
+.cta p {
+    font-weight: lighter;
+    color: #E5E7EB;
+}
+
+.book-now-button button {
+    padding: 16px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    background-color: #1f2937;
+    color: #F9FaF8;
+    margin: 0;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 @media (max-width: 1250px) {
     .hero-section {
         padding: 0 75px;
+        gap: none;
     }
 }
 
@@ -284,15 +360,26 @@ h2 {
 
     .hero-section {
         padding: 0 35px;
+        gap: 0;
     }
 
     .header .hero-left {
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 0;
     }
 
     .content {
         padding: 15px 15px;
+    }
+
+    .testimonial {
+        font-size: 24px;
+        padding: 40px 100px;
+    }
+
+    .testimonial figcaption {
+        font-size: 15px;
     }
 }
