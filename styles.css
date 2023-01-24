@@ -137,5 +137,162 @@ table {
 /* CSS Restart */
 
 body {
-    font-family: 'Baskervville', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    background-color: #1f2937;
+    padding: 0px 200px;
+}
+
+H1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right-links ul {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.logo img {
+    display: flex;
+    width: 100px;
+}
+
+.header {
+    margin-top: 15px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+.hero-left p {
+    color: #e5e7eb;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.hero-right {
+    display: flex;
+}
+
+.hero-right img {
+    display: flex;
+    width: 500px;
+    flex: 1 1 auto;
+}
+
+.header button {
+    padding: 8px 16px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav-right-links a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.nav-right-links a:hover {
+    color: #e4b69c;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 250px;
+    gap: 50px;
+}
+
+.all-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: #3882f6;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card p {
+    padding: 10px 0;
+}
+
+@media (max-width: 1250px) {
+    .hero-section {
+        padding: 0 75px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .header img {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 0 35px;
+    }
+
+    .header .hero-left {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content {
+        padding: 15px 15px;
+    }
 }
